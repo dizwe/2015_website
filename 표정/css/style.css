@@ -1,0 +1,514 @@
+body{
+	font-family: Cambria, Georgia, serif; 
+	background : url(../images/bg.png);
+	background-size: 100% 80%;
+	  text-align: center;
+	font-weight: 300;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+body .pg1{
+	background : url(../images/pg1bg.jpg);
+}
+
+a{
+	text-decoration: none;
+}
+
+header .logo{
+	margin-left : 0%;
+	margin-top : -1%;
+}
+
+.ch-img-1 { 
+	background-image: url(../images/1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../images/2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../images/3.jpg);
+
+}
+
+.ch-img-4 { 
+	background-image: url(../images/4.jpg);
+}
+
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+
+
+
+.ch-info-wrap, 
+.ch-info{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+}
+
+.ch-info-wrap {
+	top: 20px;
+	left: 20px;
+	background: #b26666;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+	
+}
+
+.ch-info {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	display: block; 
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+.ch-info .ch-info-front {
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	
+	z-index: 100;
+	box-shadow: 
+		inset 2px 1px 4px rgba(0,0,0,0.1);
+}
+
+.ch-info .ch-info-back {
+	background: rgba(230,132,107,0);
+}
+
+
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 35px;
+	margin: 0 25px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-style: bold;
+	margin: 0 30px;
+	font-size: 17px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #dae467;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: overline;
+	text-decoration: underline;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: rotate3d(1,0,0,-180deg);
+	-moz-transform: rotate3d(1,0,0,-180deg);
+	-o-transform: rotate3d(1,0,0,-180deg);
+	-ms-transform: rotate3d(1,0,0,-180deg);
+	transform: rotate3d(1,0,0,-180deg);
+	
+	box-shadow: 
+		inset 0 0 5px rgba(255,255,255,0.2), 
+		inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+.ch-item:hover .ch-info-back {
+	background: rgba(230,132,107,0.6);
+}
+
+/**************************************************/
+
+.chc-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	
+	cursor: default;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.chc-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.chc-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.chc-info .chc-info-front {
+	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
+}
+
+.chc-info .chc-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	opacity: 0;
+	background-color: #666666;
+}
+
+.chc-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 33px;
+	margin: 0 15px;
+	padding: 60px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.chc-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 17px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.chc-info p a {
+	display: block;
+	color: #dae467;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: overline;
+	text-decoration: underline;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.chc-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.chc-item:hover .chc-info-front {
+	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.chc-item:hover .chc-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+
+/**************************************************
+***************************************************
+**************************************************/
+
+.menu {
+	z-index : 999;
+	position : absolute;
+	margin : -8% 40% 0 0%;
+	width : 100%;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: right;
+}
+
+.menu a:link, .menu a:visited {
+    display: block;
+    width: 120px;
+	font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #444c4e;
+    background-color: #ddeaf0;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+	
+}
+
+.menu a:hover,.menu a:active {
+    background-color: #edfbfa;
+	text-decoration: underline;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in-out;
+}
+
+
+/**********************************BOX******************************************************/
+/* Fades in the slideshow. Hides the initial animation on the li tag. Ooops!! */
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		
+	}
+	
+	50% { 
+		opacity: 0;
+	}
+	
+	100% { 
+		opacity: 1;
+	}
+}
+
+#box {
+	text-align: left;
+	width: 700px;
+	margin: 30px auto 0 auto;
+	background: #000;
+	overflow: hidden;
+	border: 10px solid #000;
+	-webkit-box-shadow: #131313 0px 2px 10px;
+	-moz-box-shadow: #131313 0px 3px 10px;
+	box-shadow: #131313 0px 3px 10px;	
+	-webkit-animation-name: fadeIn; 
+  	-webkit-animation-duration: 3s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-delay: 0s;
+}
+
+ul#slider{
+	-webkit-border-radius: 10px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+	width: 700px;
+	height: 438px;
+	overflow: hidden;	
+}
+
+ul#thumb {
+	overflow: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+	background: #000;
+	overflow: auto;
+	width: 700px;
+}
+
+ul#thumb a {
+	-webkit-transition: opacity .2s ease-in-out;
+	border: 1px solid #979797;
+	width: 35px;
+	height: 35px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	margin: 10px 0px 0px 10px;
+	opacity: 0.75;
+}
+
+ul#thumb a:hover {
+	opacity: 1;
+} 
+
+ul#slider li {	
+	width: 700px;
+	height: 438px;
+	position: absolute;
+	}
+	
+ul#slider li p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: inherit;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+}
+
+ul#slider li p span {
+	line-height: 1.2em;
+	padding: 10px;
+	display: block;
+}
+
+/* Animation for the :target image. Slides the image in. */
+
+@-webkit-keyframes moveTarget {
+	0% {
+		left:-700px;
+		
+	}
+	
+	100% { 
+		left:0px;
+	}
+}
+
+
+ul#slider li:target {
+	-webkit-animation-name: moveTarget; 
+	-webkit-animation-duration: .5s; 
+	-webkit-animation-iteration-count: 1;
+	top:0px;
+	left: 0px;
+	z-index: 10;
+}
+
+/*
+Animation for the current image. Slides it out the frame and back to the starting position. 
+Adds a lower z-index than the now current image.
+*/
+
+@-webkit-keyframes moveIt {
+	0% {
+		left:0px;
+		
+	}
+	50% {
+		left:700px;
+		
+	}
+	100% { 
+		left:-700px;
+		z-index: 5;
+	}
+}
+
+ul#slider li:not(:target) {
+	-webkit-animation-name: moveIt; 
+  	-webkit-animation-duration: 1.5s; 
+  	-webkit-animation-iteration-count: 1;
+	top:0px;
+	left: 0px;
+}
+
+/*
+body .lip {
+	background : url(../images/lip.png);
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	background-repeat:no-repeat;
+	position: absolute;
+	margin-top : -30%;
+	margin-left : 20%;
+ 	background-size: 150% auto;
+}
+body .lip:hover{
+	background : url(../images/liphover.png);
+	background-repeat:no-repeat;
+	 	background-size: 150% auto;
+}*/
+</style>
